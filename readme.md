@@ -1,4 +1,4 @@
-# simple react app boilerplate
+# Multi Input Component
 
 Author: Mostafa Sameti
 
@@ -6,4 +6,4 @@ Author: Mostafa Sameti
 
 - `npm install` to install required packages.
 - `npm run dev` to run project on dev-server at localhost:8080.
-- `npm run build` to build project.
+- `npm run build` to build project in dist folder.
