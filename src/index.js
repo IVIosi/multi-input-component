@@ -1,6 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './app';
+import MultiInput from './multi-input';
 import './styles/main.scss';
 
-ReactDOM.render(<App onChange={values => console.log(values)}/>, document.getElementById('root'));
+ReactDOM.render(
+  <MultiInput
+    name="test attribute"
+    title="Test"
+    onChange={(values) => console.log(values)}
+  />,
+  document.getElementById('root'),
+);
