@@ -9,12 +9,6 @@ export default function InputRow(props) {
     }
     onChange(e.target.value);
   };
-  const handleFocus = () => {
-    setActive(true);
-  };
-  const handleBlur = () => {
-    setActive(false);
-  };
   return (
     <div className="field-input">
       <div className={'field-input__text'.concat(active ? ' active' : '')}>
@@ -22,8 +16,8 @@ export default function InputRow(props) {
         <input
           className="field-input__input"
           onInput={handleInput}
-          onFocus={handleFocus}
-          onBlur={handleBlur}
+          onFocus={() => setActive(true)}
+          onBlur={() => setActive(false)}
         />
       </div>
       {!isLastField && (
