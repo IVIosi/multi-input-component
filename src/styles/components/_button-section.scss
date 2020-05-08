@@ -1,0 +1,29 @@
+.button-section {
+  display: flex;
+  padding: 20px 30px;
+  justify-content: flex-end;
+  background-color: rgba(230, 237, 255, 1);
+  border: 1px solid #eee;
+  .btn {
+    color: rgba(0, 0, 0, 0.87);
+    margin: 0 15px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    min-width: 64px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    &.primary {
+      color: #3d9cff;
+    }
+    &.secondary {
+      color: #464646;
+    }
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
