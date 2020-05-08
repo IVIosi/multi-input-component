@@ -47,7 +47,7 @@ export default function MultiInput({ name, title, onChange }) {
               isLastField={isLastField}
               onChange={(value) => handleFieldInputChange(value, fieldKey)}
               onRemove={() => handleFieldRemove(fieldKey)}
-              onInput={isLastField ? addFieldRow : null}
+              onInput={addFieldRow}
             />
           );
         })}

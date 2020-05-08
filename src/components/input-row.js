@@ -4,15 +4,15 @@ export default function InputRow(props) {
   const { label, onInput, onChange, onRemove, isLastField } = props;
   const [active, setActive] = useState(false);
   const handleInput = (e) => {
-    if (typeof onInput === 'function') {
+    if (isLastField) {
       onInput();
     }
     onChange(e.target.value);
   };
-  const handleFocus = (e) => {
+  const handleFocus = () => {
     setActive(true);
   };
-  const handleBlur = (e) => {
+  const handleBlur = () => {
     setActive(false);
   };
   return (
